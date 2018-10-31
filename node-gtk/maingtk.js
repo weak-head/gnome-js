@@ -1,7 +1,7 @@
-import { require as _require, startLoop } from "node-gtk";
+const Ngtk = require("node-gtk");
 
-const Gtk = _require("Gtk", "3.0");
-startLoop();
+const Gtk = Ngtk.require("Gtk", "3.0");
+Ngtk.startLoop();
 Gtk.init();
 
 const header = new Gtk.HeaderBar();
